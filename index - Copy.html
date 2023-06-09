@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- Head-->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Breast Cancer Detection</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+	 <!-- End of Head-->
+	 
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Breast Cancer Detection</a>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!-- Masthead-->
+
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+
+                        <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Texture Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="texture_mean" class="sr-only">texture_mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="texture_mean" required  placeholder="Texture mean" >
+
+							</div>
+
+						</div>
+                        </div>
+                    <!-- ROW 1-->
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Area Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="area_mean" class="sr-only">area_mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="area_mean" required  placeholder="Area Mean" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Smoothness Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="smoothness_mean" class="sr-only">Smoothness Mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="smoothness_mean" required  placeholder="Smoothness Mean" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Concavity Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="concavity_mean" class="sr-only">Concavity Mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="concavity_mean" required  placeholder="Concavity Mean" >
+							</div>
+
+						</div>
+                        </div>
+                </div>
+                <div class="row">
+
+                        <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Symmetry Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="symmetry_mean" class="sr-only">Symmetry Mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="symmetry_mean" required  placeholder="Symmetry Mean" >
+
+							</div>
+
+						</div>
+                        </div>
+                    <!-- ROW 1-->
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter Fractal Dimension Mean </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="fractal_dimension_mean" class="sr-only">Fractal Dimension Mean</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="fractal_dimension_mean" required  placeholder="Fractal Dimension Mean" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter texture se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="texture_se" class="sr-only">texture se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="texture_se" required  placeholder="texture se" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter area se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="area_se" class="sr-only">area se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="area_se" required  placeholder="area se" >
+							</div>
+
+						</div>
+                        </div>
+                </div>
+                <div class="row">
+
+                        <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter smoothness se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="smoothness_se" class="sr-only">smoothness se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="smoothness_se" required  placeholder="smoothness se" >
+
+							</div>
+
+						</div>
+                        </div>
+                    <!-- ROW 1-->
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter concavity se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="concavity_se" class="sr-only">concavity se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="concavity_se" required  placeholder="concavity se" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter symmetry se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="symmetry_se" class="sr-only">symmetry se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="symmetry_se" required  placeholder="symmetry se" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter fractal dimension se </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="fractal_dimension_se" class="sr-only">fractal dimension se</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="fractal_dimension_se" required  placeholder="fractal dimension se" >
+							</div>
+
+						</div>
+                        </div>
+                </div>
+                <div class="row">
+
+                        <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter smoothness worst </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="smoothness_worst" class="sr-only">smoothness worst</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="smoothness_worst" required  placeholder="smoothness worst" >
+
+							</div>
+
+						</div>
+                        </div>
+                    <!-- ROW 1-->
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter concavity worst </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="concavity_worst" class="sr-only">concavity worst</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="concavity_worst" required  placeholder="concavity worst" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter symmetry worst </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="symmetry_worst" class="sr-only">symmetry worst</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="symmetry_worst" required  placeholder="symmetry worst" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="col-sm center-header">
+                            <!-- Page heading-->
+                           <div class="form-group mx-sm-3 mb-2">
+                            <h4 class="mb-5 top-header">Enter fractal dimension worst </h4>
+							</div>
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							<label for="fractal_dimension_worst" class="sr-only">fractal dimension worst</label>
+							  <input type="number" class="form-control form-control-md input-budget" id="fractal_dimension_worst" required  placeholder="fractal dimension worst" >
+							</div>
+
+						</div>
+                        </div>
+
+                    <div class="row d-flex justify-content-center">
+
+  <div class="col-md-6">
+
+                        <div class="center-header">
+                            <!-- Page heading-->
+						  <div class="form-inline" id="frm">
+						<div class="form-group mx-sm-3 mb-2">
+							 <button  class="btn btn-primary " onclick='fillItem()'  >Predict</button>
+							</div>
+
+
+						</div>
+                    </div>
+
+</div>
+
+            </div>
+                </div>
+
+
+        <!-- Icons Grid-->
+        <section class="features-icons bg-light text-center">
+            <div class="container justify-content-center">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
+                            <h3>Predicted Value</h3>
+                            <p class="lead mb-0">Predicted diagnose</p>
+							<h3 id='sectionPredicted'>
+
+							</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Image Showcases-->
+ <!-- Icons Grid-->
+
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <p class="text-muted small mb-4 mb-lg-0"> اللهم الخلاص عشان خلاص.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+		<script>	
+
+			    let fillItem = () => {
+					  
+					  if (!$('#texture_mean').val() || !$('#area_mean').val() || !$('#smoothness_mean').val() || !$('#concavity_mean').val() || !$('#symmetry_mean').val() || !$('#fractal_dimension_mean').val()
+                      && !$('#texture_se').val() || !$('#area_se').val() || !$('#smoothness_se').val() || !$('#concavity_se').val() || !$('#symmetry_se').val() || !$('#fractal_dimension_se').val()
+                      && !$('#smoothness_worst').val() || !$('#concavity_worst').val() || !$('#symmetry_worst').val() || !$('#fractal_dimension_worst').val()){
+					  //set border color to the input
+						//$('#texture_mean').attr('style', "border-radius: 5px; border:#FF0000 1px solid;");
+						alert("Please enter a value for missing attributes");
+					  } else{
+						//Remove previous value
+
+						document.getElementById("sectionPredicted").innerHTML = "";
+
+						//get values plus set section values...
+
+                          let fixedPoint = 5
+						var prodivedtexture_mean =  parseFloat($("#texture_mean").val()).toFixed(fixedPoint);
+
+                        var prodivedarea_meanarea_mean = parseFloat($("#area_mean").val()).toFixed(fixedPoint);
+
+                        var prodivedsmoothness_mean = parseFloat($("#smoothness_mean").val()).toFixed(fixedPoint)
+
+                        var prodivedconcavity_mean =  parseFloat($("#concavity_mean").val()).toFixed(fixedPoint);
+
+                        var prodivedsymmetry_mean =  parseFloat($("#symmetry_mean").val()).toFixed(fixedPoint);
+
+                        var prodivedfractal_dimension_mean =  parseFloat($("#fractal_dimension_mean").val()).toFixed(fixedPoint);
+
+                        var prodivedtexture_se =  parseFloat($("#texture_se").val()).toFixed(fixedPoint);
+
+                        var prodivedarea_se =  parseFloat($("#area_se").val()).toFixed(fixedPoint);
+
+                        var prodivedsmoothness_se =  parseFloat($("#smoothness_se").val()).toFixed(fixedPoint);
+
+                        var prodivedconcavity_se = parseFloat($("#concavity_se").val()).toFixed(fixedPoint);
+
+                        var prodivedsymmetry_se = parseFloat($("#symmetry_se").val()).toFixed(fixedPoint);
+
+                        var prodivedfractal_dimension_se = parseFloat($("#fractal_dimension_se").val()).toFixed(fixedPoint);
+
+                        var prodivedsmoothness_worst = parseFloat($("#smoothness_worst").val()).toFixed(fixedPoint);
+
+                        var prodivedconcavity_worst = parseFloat($("#concavity_worst").val()).toFixed(fixedPoint);
+
+                        var prodivedsymmetry_worst = parseFloat($("#symmetry_worst").val()).toFixed(fixedPoint);
+
+                        var prodivedfractal_dimension_worst = parseFloat($("#fractal_dimension_worst").val()).toFixed(fixedPoint);
+
+
+
+
+						//ajax call to get predicted value
+						$.ajax({
+							type:"GET",
+							dataType: "json",
+							crossDomain: true,
+							//api url with parameter
+							url: "http://127.0.0.1:5000/prediction/" + prodivedtexture_mean + "-" + prodivedarea_meanarea_mean + "-"+ prodivedsmoothness_mean + "-" + prodivedconcavity_mean + "-" + prodivedsymmetry_mean + "-" + prodivedfractal_dimension_mean + "-" + prodivedtexture_se + "-" + prodivedarea_se + "-" + prodivedsmoothness_se + "-" + prodivedconcavity_se + "-" + prodivedsymmetry_se + "-"+ prodivedfractal_dimension_se + "-" + prodivedsmoothness_worst + "-" + prodivedconcavity_worst + "-"+ prodivedsymmetry_worst + "-"+ prodivedfractal_dimension_worst,
+
+							success: function(data){
+								console.log(data);	
+								let predictedElement = document.getElementById('sectionPredicted');
+
+                                data = (data == "1") ? "Malignant": "Benign";
+								predictedElement.innerHTML +=  data;
+							}
+							})
+					  }
+				}
+
+		</script>
+        </div>
+    </body>
+</html>
